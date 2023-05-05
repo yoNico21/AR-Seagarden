@@ -15,6 +15,7 @@ function App() {
       <section className="footer">
         <p className="outro"></p>
       </section>
+      <Analytics />
     </>
   );
 }
