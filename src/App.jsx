@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Analytics } from "@vercel/analytics/react";
 import { Hero } from "./Hero";
 
 import "../node_modules/destyle.css/destyle.css";
@@ -15,7 +14,6 @@ function App() {
       <section className="footer">
         <p className="outro"></p>
       </section>
-      <Analytics />
     </>
   );
 }
