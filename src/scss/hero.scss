@@ -1,0 +1,24 @@
+@import "./variables";
+
+.hero {
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+.logo {
+  width: 50dvw;
+}
+
+.subtext {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.btn-start {
+  margin-top: 8rem;
+}

@@ -1,5 +1,21 @@
 import { useState } from "react";
+import { Hero } from "./Hero";
 
-function App() {}
+import "../node_modules/destyle.css/destyle.css";
+import "./scss/app.scss";
+
+function App() {
+  return (
+    <>
+      <Hero />
+      <section className="info">
+        <p className="project-description"></p>
+      </section>
+      <section className="footer">
+        <p className="outro"></p>
+      </section>
+    </>
+  );
+}
 
 export default App;
