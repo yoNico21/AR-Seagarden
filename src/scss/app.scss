@@ -1,7 +1,10 @@
 @import "./variables";
 
 html {
+  font-family: $inter;
+  color: $col2;
   text-wrap: balance;
+  background-color: $col5;
 }
 
 @mixin all-headings {
@@ -39,5 +42,5 @@ h {
 }
 
 .btn {
-  padding: 1rem;
+  border-radius: 100rem;
 }

@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { Hero } from "./Hero";
+import { Info } from "./Info";
+import { Footer } from "./Footer";
+import "./scss/app.scss";
 
 import "../node_modules/destyle.css/destyle.css";
 import "./scss/app.scss";
@@ -8,12 +11,8 @@ function App() {
   return (
     <>
       <Hero />
-      <section className="info">
-        <p className="project-description"></p>
-      </section>
-      <section className="footer">
-        <p className="outro"></p>
-      </section>
+      <Info />
+      <Footer />
     </>
   );
 }
