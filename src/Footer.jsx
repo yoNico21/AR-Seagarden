@@ -14,7 +14,9 @@ export function Footer() {
   const mySite = "nielsnicola.xyz";
   const nielsnicola = (
     <>
-      <a href={https + mySite}>{mySite}</a>
+      <a href={https + mySite} target="_blank">
+        {mySite}
+      </a>
     </>
   );
 

@@ -48,7 +48,7 @@ export function Hero() {
       <section className="hero">
         <div className="hero-img"></div>
         {svg}
-        <h3 className="subtext">{subtext}</h3>
+        <h4 className="subtext">{subtext}</h4>
         <button className="btn btn-start">Start Experience</button>
       </section>
     </>
