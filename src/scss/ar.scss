@@ -1,12 +1,12 @@
-@import './variables';
+@import "./variables";
 
 .ar-canvas {
   overflow: hidden;
+  width: 100dvw;
+  height: 100svh;
 }
 
 #canvas1 {
-  width: auto;
-  height: 100svh;
   background-color: $col3;
 }
 
