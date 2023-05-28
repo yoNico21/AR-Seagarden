@@ -1,0 +1,47 @@
+@import './variables';
+
+.btn-share,
+.social {
+  font-size: 1.5rem;
+  filter: drop-shadow(0 0.3rem 0.5rem rgba(13, 75, 75, 0.3));
+}
+
+.btn-share {
+  color: $col1;
+  background-color: $col3;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials-container {
+  position: absolute;
+  right: 1.1rem;
+  bottom: 5rem;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.show {
+  display: inline-flex;
+}
+
+.social {
+  border-radius: 0.5rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.snapchat {
+  color: #121212;
+}

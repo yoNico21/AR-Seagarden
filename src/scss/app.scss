@@ -1,0 +1,50 @@
+@import './variables';
+
+html {
+  font-family: $inter;
+  color: $col2;
+  //text-wrap: balance;
+  background-color: $col5;
+}
+
+@mixin all-headings {
+  @for $index from 1 through 6 {
+    h#{$index} {
+      @content;
+    }
+  }
+}
+
+@include all-headings {
+  line-height: 1.6;
+  font-weight: 700 !important;
+}
+
+h {
+  &1 {
+    font-size: 2.125rem !important;
+  }
+  &2 {
+    font-size: 1.875rem !important;
+  }
+  &3 {
+    font-size: 1.5rem !important;
+  }
+  &4 {
+    font-size: 1.25rem !important;
+  }
+  &5 {
+    font-size: 1.125rem !important;
+  }
+  &6 {
+    font-size: 1rem !important;
+  }
+}
+
+.btn {
+  border-radius: 100rem;
+}
+
+// #app {
+//   position: relative;
+// }

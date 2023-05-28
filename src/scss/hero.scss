@@ -1,0 +1,51 @@
+@import './variables';
+
+.hero {
+  position: relative;
+  width: 100dvw;
+  height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: $padding-big;
+}
+
+.logo {
+  width: 50dvw;
+  fill: $col3;
+}
+
+.hero-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.98;
+  background: url('/zypendaal.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.subtext {
+  margin-top: 1.5rem;
+  text-align: center;
+  color: $col3;
+}
+
+.btn-start {
+  margin-top: 3rem;
+  background-color: $col1;
+  padding: 0.5rem;
+  outline: 0.1rem solid rgba(255, 255, 255, 0);
+  outline-offset: 0.25rem;
+  transition: 0.3s all ease;
+}
+
+.btn-start:hover {
+  outline-color: $col1;
+  color: $col3;
+}

@@ -1,0 +1,12 @@
+@import './variables';
+
+.footer {
+  color: $col4;
+  padding: $padding-small $padding-big;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $col3;
+  white-space: nowrap;
+}
