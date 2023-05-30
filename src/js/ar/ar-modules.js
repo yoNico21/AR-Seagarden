@@ -1,8 +1,8 @@
-import * as THREE from 'three';
-import * as THREEx from '@ar-js-org/ar.js/three.js/build/ar-threex-location-only.js';
+import * as THREE from "three";
+import * as THREEx from "@ar-js-org/ar.js/three.js/build/ar-threex-location-only.js";
 
 export function main() {
-  const canvas = document.getElementById('canvas1');
+  const canvas = document.getElementById("canvas1");
 
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(60, 1.33, 0.1, 10000);
@@ -10,6 +10,7 @@ export function main() {
 
   const arjs = new THREEx.LocationBased(scene, camera);
   const cam = new THREEx.WebcamRenderer(renderer);
+  const orientation = new THREEx.DeviceOrientationControls(camera);
 
   const geom = new THREE.BoxGeometry(20, 20, 20);
   const mtl = new THREE.MeshBasicMaterial({ color: 0xff0000 });
@@ -31,6 +32,7 @@ export function main() {
       camera.updateProjectionMatrix();
     }
     cam.update();
+    orientation.update();
     renderer.render(scene, camera);
     requestAnimationFrame(render);
   }
