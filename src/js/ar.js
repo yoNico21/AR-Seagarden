@@ -1,20 +1,19 @@
-import { create, add } from './tools';
-import { main } from './ar/ar-modules';
-import { share } from './share';
-import '/src/scss/ar.scss';
+import { create, add } from "./tools";
+import { share } from "./share";
+import "/src/scss/ar.scss";
 
 export function ar(el) {
-  let section = create('section', 'ar-canvas');
+  let section = create("section", "ar-canvas");
 
-  let canvas = create('canvas', '#canvas1');
+  let canvas = create("canvas", "#canvas");
 
-  let div = create('div', 'nav-bar');
+  let div = create("div", "nav-bar");
 
-  let container = create('div', 'logo-min');
+  let container = create("div", "logo-min");
 
-  let svg1 = create('svg', 'stroke');
+  let svg1 = create("svg", "stroke");
   svg1.innerHTML = svg;
-  let svg2 = create('svg', 'fill');
+  let svg2 = create("svg", "fill");
   svg2.innerHTML = svg;
 
   add(section, el);
@@ -24,8 +23,6 @@ export function ar(el) {
   add(svg1, container);
   add(svg2, container);
   add(share(), div);
-
-  main();
 }
 
 const svg = `
