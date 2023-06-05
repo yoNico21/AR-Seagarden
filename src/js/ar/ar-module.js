@@ -57,6 +57,7 @@ export function startAR() {
 
     // Update the scene using the latest sensor readings
     deviceOrientationControls.update();
+    console.log(deviceOrientationControls.update());
 
     cam.update();
     renderer.render(scene, camera);
