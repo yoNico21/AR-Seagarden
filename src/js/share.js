@@ -18,11 +18,7 @@ export function share() {
   );
   const msgtitle = encodeURIComponent(pageTitle);
   const whatsappSeaEmojis = "🐠🐙🦞🪼🐟🦐🪼🦀";
-  const emailmsg = `
-    ${msg}<br>
-    <br>
-    ${link}
-    `;
+  const emailmsg = `${msg} ${link}`;
 
   const socials = [
     {
@@ -50,7 +46,7 @@ export function share() {
       icon: "📧",
       color: "#ff5733",
       shape: "round",
-      href: `mailto:test@example.com?subject=${msgtitle}&body=${emailmsg}`,
+      href: `mailto:?subject=${msgtitle}&body=${emailmsg}`,
     },
   ];
 
