@@ -1,7 +1,29 @@
 @import "./variables";
 
-.more {
+.main-nav {
+  background-color: $col3;
+  padding: 2rem 3rem 0 3rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.about,
+.creatures {
   background-color: $col1;
+}
+
+.nav-item {
+  border-bottom: 0.25rem solid rgba(0, 0, 0, 0);
+  padding: 0 1rem 1rem 1rem;
+  cursor: default;
+}
+
+.active {
+  border-color: rgba(0, 0, 0, 0.5);
+}
+
+.about,
+.creatures {
   padding: $padding-big;
   display: flex;
   flex-direction: column;
@@ -13,6 +35,26 @@
 //   width: 100%;
 //   max-width: 50dvw;
 // }
+
+.molukse-zeetuin {
+  margin-top: 2rem;
+  width: 100%;
+  height: auto;
+}
+
+.image-caption {
+  margin-top: 1rem;
+  width: 100%;
+  font-size: 0.75rem;
+}
+
+.image-caption > a {
+  cursor: pointer;
+}
+
+.github-description {
+  margin-top: 4rem;
+}
 
 .btn-github {
   background-color: $col3;
