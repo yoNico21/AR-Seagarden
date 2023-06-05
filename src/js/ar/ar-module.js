@@ -27,6 +27,7 @@ export function startAR() {
     { fileName: "creature_1", lat: 5.9109252, lon: 51.9828927, scale: 2.0 },
     { fileName: "creature_2", lat: 5.9108725, lon: 51.9829071, scale: 2.0 },
     { fileName: "creature_3", lat: 5.9108651, lon: 51.9829544, scale: 2.0 },
+    { fileName: "creature_4", lat: 5.910906, lon: 51.982916, scale: 2.0 },
   ];
 
   const loader = new GLTFLoader();
