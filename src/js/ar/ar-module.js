@@ -38,20 +38,49 @@ export function startAR() {
   ];
   shuffle(coordinates);
 
-  let elevation = [{ level: 0 }, { level: 1 }, { level: 3 }, { level: 5 }];
+  let elevation = [
+    { level: -6 },
+    { level: -5 },
+    { level: -4 },
+    { level: -3 },
+    { level: -2 },
+    { level: -1 },
+    { level: 0 },
+    { level: 1 },
+    { level: 2 },
+    { level: 3 },
+    { level: 4 },
+    { level: 5 },
+    { level: 6 },
+  ];
   shuffle(elevation);
+
+  let lastIndex;
 
   const loader = new GLTFLoader();
   objects.forEach((object, i) => {
     loader.load(`/assets/${object.fileName}.glb`, function (glb) {
       const scale = object.scale;
       glb.scene.scale.setScalar(scale);
+
+      let idx;
+      let randomIndex = Math.random() * elevation.length;
+
+      if (lastIndex !== randomIndex) {
+        idx = Math.floor(randomIndex);
+      }
+      console.log("before: " + randomIndex + "after: " + idx);
+
       arjs.add(
         glb.scene,
         coordinates[i].lat,
         coordinates[i].lon,
-        elevation[i].level
+        elevation[idx].level
       );
+
+      console.log(elevation[idx].level);
+
+      lastIndex = i;
     });
   });
 
