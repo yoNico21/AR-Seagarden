@@ -1,3 +1,4 @@
+import { addCreature } from "./three/creature-1";
 import { create, add } from "./tools";
 import "/src/scss/main.scss";
 
@@ -95,7 +96,7 @@ function creatures() {
   let section = create("section", "creatures");
   section.classList.add("main-item");
 
-  const THREECreatures = [1, 2, 3, 4, 5, 6];
+  const THREECreatures = [1];
 
   THREECreatures.forEach((creature) => {
     let div = create("div", "creature-container");
@@ -105,6 +106,8 @@ function creatures() {
 
     add(div, section);
     add(canvas, div);
+
+    addCreature(`creature-${creature}`);
   });
 
   return section;

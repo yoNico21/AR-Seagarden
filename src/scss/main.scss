@@ -89,7 +89,11 @@
 
 // creatures stylesheet -------------------------
 .creature-container {
-  background-color: grey;
+  width: 20rem;
+  height: 20rem;
+}
+
+.creature-container > canvas {
   width: 20rem;
   height: 20rem;
 }
