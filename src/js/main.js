@@ -44,7 +44,7 @@ function about() {
   section.classList.add("main-item");
 
   const content =
-    "seagarden.app is a web-based augmented reality application. It acts as a second layer on top of Park Zypendaal and Sonsbeek located in Arnhem. Displaying imagery of a sea garden full of creatures to explore while going for a walk in the park. The start of this project is a reflection of the <i>Molukse Zeetuin</i> (which translates to Moluccan sea garden) which took place in Arnhem in 1928. The Moluccan sea garden can be interpreted as an early attempt at an augmented reality experience. This ultimately gave me the idea to create a modern-day sea garden for Park Zypendaal and Sonsbeek, in the form of a web application.";
+    "seagarden.app is a web-based augmented reality application. It acts as a second layer on top of park Sonsbeek and park Zypendaal located in Arnhem. Displaying imagery of a sea garden full of creatures to explore while going for a walk in the park. The start of this project is a reflection of the <i>Molukse Zeetuin</i> (which translates to Moluccan sea garden) which took place in Arnhem in 1928. The Moluccan sea garden can be interpreted as an early attempt at an augmented reality experience. This ultimately gave me the idea to create a modern-day sea garden for park Sonsbeek and park Zypendaal, in the form of a web application.";
 
   let p = create("p", "project-description");
   p.innerHTML = content;
@@ -94,6 +94,18 @@ function about() {
 function creatures() {
   let section = create("section", "creatures");
   section.classList.add("main-item");
+
+  const THREECreatures = [1, 2, 3, 4, 5, 6];
+
+  THREECreatures.forEach((creature) => {
+    let div = create("div", "creature-container");
+    div.classList.add(`container-${creature}`);
+
+    let canvas = create("canvas", `#creature-${creature}`);
+
+    add(div, section);
+    add(canvas, div);
+  });
 
   return section;
 }

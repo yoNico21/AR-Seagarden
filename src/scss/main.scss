@@ -31,6 +31,13 @@
   align-items: center;
 }
 
+.creatures {
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+
 // .project-description {
 //   width: 100%;
 //   max-width: 50dvw;
@@ -78,4 +85,11 @@
 
 .repo-hyperlink > i {
   font-size: 1.5em;
+}
+
+// creatures stylesheet -------------------------
+.creature-container {
+  background-color: grey;
+  width: 20rem;
+  height: 20rem;
 }
