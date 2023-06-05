@@ -1,7 +1,7 @@
 import "destyle.css";
 import "/src/scss/app.scss";
 import { hero } from "./hero";
-import { info } from "./info";
+import { main } from "./main";
 import { footer } from "./footer";
 import { ar } from "./ar";
 import { startAR } from "./ar/ar-module";
@@ -36,7 +36,8 @@ function display() {
     });
   } else {
     hero(app);
-    info(app);
+    //info(app);
+    main(app);
     footer(app);
 
     const start = document.querySelector(".btn-start");
