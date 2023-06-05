@@ -24,8 +24,9 @@ export function startAR() {
   // Load in objects
   const objects = [
     // { fileName: "creature_1", lat: 5.9108008, lon: 51.9829402, scale: 1.0 }, // at home
-    { fileName: "creature_1", lat: 5.8993213, lon: 51.982319, scale: 1.0 },
-    { fileName: "creature_2", lat: 5.89939, lon: 51.9822263, scale: 1.0 },
+    { fileName: "creature_1", lat: 5.9109252, lon: 51.9828927, scale: 2.0 },
+    { fileName: "creature_2", lat: 5.9108725, lon: 51.9829071, scale: 2.0 },
+    { fileName: "creature_3", lat: 5.9108651, lon: 51.9829544, scale: 2.0 },
   ];
 
   const loader = new GLTFLoader();
