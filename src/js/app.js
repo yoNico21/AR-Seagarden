@@ -16,7 +16,15 @@ let refresh = false;
 
 if (app.innerHTML === "") display();
 
-if (showCanvas === false) addScene();
+const nav = document.querySelector(".main-nav");
+
+nav.lastChild.addEventListener("click", () => {
+  if (nav.lastChild.classList.contains("active")) {
+    if (document.querySelectorAll("canvas")) {
+      addScene();
+    }
+  }
+});
 
 function display() {
   if (showCanvas) {

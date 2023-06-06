@@ -11,8 +11,8 @@ export function main(element) {
   add(mainContent, section);
 
   const content = [
-    { label: "Creatures", function: creatures() },
     { label: "About", function: about() },
+    { label: "Creatures", function: creatures() },
   ];
 
   content.forEach((item, i) => {
