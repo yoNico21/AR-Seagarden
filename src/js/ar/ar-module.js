@@ -24,17 +24,41 @@ export function startAR() {
   // Load in objects
   const objects = [
     // { fileName: "creature_1", lat: 5.9108008, lon: 51.9829402, scale: 1.0 }, // at home
-    { fileName: "creature_1", scale: 2.0 },
-    { fileName: "creature_2", scale: 2.0 },
-    { fileName: "creature_3", scale: 2.0 },
-    { fileName: "creature_4", scale: 2.0 },
+    { fileName: "creature_1", scale: 1.0 },
+    { fileName: "creature_2", scale: 1.0 },
+    { fileName: "creature_3", scale: 1.0 },
+    { fileName: "creature_4", scale: 1.0 },
+    { fileName: "creature_1", scale: 1.0 },
+    { fileName: "creature_2", scale: 1.0 },
+    { fileName: "creature_3", scale: 1.0 },
+    { fileName: "creature_4", scale: 1.0 },
+    { fileName: "creature_1", scale: 1.0 },
+    { fileName: "creature_2", scale: 1.0 },
+    { fileName: "creature_3", scale: 1.0 },
+    { fileName: "creature_4", scale: 1.0 },
+    { fileName: "creature_1", scale: 1.0 },
+    { fileName: "creature_2", scale: 1.0 },
+    { fileName: "creature_3", scale: 1.0 },
+    { fileName: "creature_4", scale: 1.0 },
   ];
 
   let coordinates = [
-    { lat: 5.9109252, lon: 51.9828927 },
-    { lat: 5.9108651, lon: 51.9829544 },
-    { lat: 5.9108725, lon: 51.9829071 },
-    { lat: 5.910906, lon: 51.982916 },
+    { lat: 5.9058484, lon: 51.9871283 },
+    { lat: 5.9048443, lon: 51.988395 },
+    { lat: 5.9060626, lon: 51.9887855 },
+    { lat: 5.9062943, lon: 51.9888972 },
+    { lat: 5.9056432, lon: 51.9889287 },
+    { lat: 5.9059419, lon: 51.9889289 },
+    { lat: 5.9062192, lon: 51.9890902 },
+    { lat: 5.9055768, lon: 51.9891317 },
+    { lat: 5.9051162, lon: 51.9888022 },
+    { lat: 5.9064147, lon: 51.9896039 },
+    { lat: 5.9027458, lon: 51.9870244 },
+    { lat: 5.9035987, lon: 51.9882077 },
+    { lat: 5.9025111, lon: 51.9888901 },
+    { lat: 5.9012387, lon: 51.9882265 },
+    { lat: 5.9018918, lon: 51.9882129 },
+    { lat: 5.9053938, lon: 51.9892133 },
   ];
   shuffle(coordinates);
 

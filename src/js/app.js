@@ -16,6 +16,8 @@ let refresh = false;
 
 if (app.innerHTML === "") display();
 
+if (showCanvas === false) addScene();
+
 function display() {
   if (showCanvas) {
     ar(app);
@@ -38,8 +40,6 @@ function display() {
     hero(app);
     main(app);
     footer(app);
-
-    addScene();
 
     const start = document.querySelector(".btn-start");
 
