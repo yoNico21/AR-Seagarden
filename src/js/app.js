@@ -5,6 +5,7 @@ import { main } from "./main";
 import { footer } from "./footer";
 import { ar } from "./ar";
 import { startAR } from "./ar/ar-module";
+import { addScene } from "./three/addScene";
 import { inject } from "@vercel/analytics";
 inject();
 
@@ -24,7 +25,6 @@ function display() {
 
     share.addEventListener("click", () => {
       socials.classList.toggle("show");
-      console.log("click");
     });
 
     const logo = document.querySelector(".logo-min");
@@ -36,9 +36,10 @@ function display() {
     });
   } else {
     hero(app);
-    //info(app);
     main(app);
     footer(app);
+
+    addScene();
 
     const start = document.querySelector(".btn-start");
 

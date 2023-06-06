@@ -1,4 +1,3 @@
-import { addCreature } from "./three/creature-1";
 import { create, add } from "./tools";
 import "/src/scss/main.scss";
 
@@ -34,9 +33,9 @@ export function main(element) {
     });
   });
 
-  nav.children[0].classList.add("active");
+  nav.children[1].classList.add("active");
 
-  add(content[0].function, mainContent);
+  add(content[1].function, mainContent);
   add(section, element);
 }
 
@@ -93,21 +92,20 @@ function about() {
 }
 
 function creatures() {
+  //console.log("creatures() being called");
   let section = create("section", "creatures");
   section.classList.add("main-item");
 
-  const THREECreatures = [1];
+  const ThreeCreatures = [1, 2, 3, 4];
 
-  THREECreatures.forEach((creature) => {
+  ThreeCreatures.forEach((i) => {
     let div = create("div", "creature-container");
-    div.classList.add(`container-${creature}`);
+    div.classList.add(`container-${i}`);
 
-    let canvas = create("canvas", `#creature-${creature}`);
+    let canvas = create("canvas", `#creature-${i}`);
 
     add(div, section);
     add(canvas, div);
-
-    addCreature(`creature-${creature}`);
   });
 
   return section;
