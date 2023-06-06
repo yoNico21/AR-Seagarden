@@ -33,9 +33,9 @@ export function main(element) {
     });
   });
 
-  nav.children[1].classList.add("active");
+  nav.children[0].classList.add("active");
 
-  add(content[1].function, mainContent);
+  add(content[0].function, mainContent);
   add(section, element);
 }
 
