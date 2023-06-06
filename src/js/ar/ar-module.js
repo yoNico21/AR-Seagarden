@@ -28,18 +28,18 @@ export function startAR() {
     { fileName: "creature_2", scale: 1.0 },
     { fileName: "creature_3", scale: 1.0 },
     { fileName: "creature_4", scale: 1.0 },
+    { fileName: "creature_5", scale: 1.0 },
     { fileName: "creature_1", scale: 1.0 },
     { fileName: "creature_2", scale: 1.0 },
     { fileName: "creature_3", scale: 1.0 },
     { fileName: "creature_4", scale: 1.0 },
+    { fileName: "creature_5", scale: 1.0 },
     { fileName: "creature_1", scale: 1.0 },
     { fileName: "creature_2", scale: 1.0 },
     { fileName: "creature_3", scale: 1.0 },
     { fileName: "creature_4", scale: 1.0 },
+    { fileName: "creature_5", scale: 1.0 },
     { fileName: "creature_1", scale: 1.0 },
-    { fileName: "creature_2", scale: 1.0 },
-    { fileName: "creature_3", scale: 1.0 },
-    { fileName: "creature_4", scale: 1.0 },
   ];
 
   let coordinates = [

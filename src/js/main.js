@@ -96,7 +96,7 @@ function creatures() {
   let section = create("section", "creatures");
   section.classList.add("main-item");
 
-  const ThreeCreatures = [1, 2, 3, 4];
+  const ThreeCreatures = [1, 2, 3, 4, 5];
 
   ThreeCreatures.forEach((i) => {
     let div = create("div", "creature-container");
